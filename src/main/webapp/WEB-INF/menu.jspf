@@ -1,0 +1,9 @@
+<nav>
+    <span>Sistema Multi-Tenant</span>
+    <a href="${pageContext.request.contextPath}/app/publicacoes">Notícias Internas</a>
+    <a href="${pageContext.request.contextPath}/app/lancamentos">Contas</a>
+    <c:if test="${sessionScope.perfilAdmin}">
+        <a href="${pageContext.request.contextPath}/app/operadores">Gerenciar Usuários</a>
+    </c:if>
+    <a href="${pageContext.request.contextPath}/logout">Sair</a>
+</nav>
